@@ -11,4 +11,20 @@ import { ProductList } from './shared/components/product-list/product-list'
 })
 export class App {
   protected readonly title = signal('product-list');
+
+  our_text = "Hallo Welt"
+
+  ngOnInit(){
+    this.our_text = "Banana"
+  }
+
+  textGen(){
+    this.our_text = 'Button Pushed'
+  }
+
+  isDisabled = false
+
+  getButtonColor(){
+    return 'blue'
+  }
 }
